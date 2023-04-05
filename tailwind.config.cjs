@@ -5,7 +5,14 @@ const config = {
 	],
 
 	theme: {
-		extend: {}
+		extend: {
+			colors: {
+				primary: '#ECAA5F',
+				background: '#13100C',
+				'background-light': '#1F1A14',
+				'font-white': '#FFECD6'
+			}
+		}
 	},
 
 	plugins: [require('flowbite/plugin')],
