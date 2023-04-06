@@ -9,7 +9,11 @@ const config = {
 		// See https://kit.svelte.dev/docs/adapters for more information about adapters.
 		adapter: adapter()
 	},
-
+	vite: {
+		optimizeDeps: {
+			include: ['papaparse']
+		}
+	},
 	preprocess: [
 		preprocess({
 			postcss: true

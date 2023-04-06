@@ -1,14 +1,12 @@
-<script>
-	import { Button } from 'flowbite-svelte';
-</script>
-
 <div class="text-font-white">
-	<div class="flex items-center justify-around p-8">
+	<div class="flex items-center justify-around p-8 pb-20">
 		<div class="w-1/3">
 			<div class="text-5xl">
 				Habitat Hive - your perfect destination for hassle-free house hunting!
 			</div>
-			<Button color="primary" class="mt-8 text-xl">Explore More</Button>
+			<button class="mt-8 rounded-lg bg-primary p-2 text-xl hover:bg-background-light"
+				>Explore More</button
+			>
 		</div>
 		<div>
 			<img
@@ -36,10 +34,10 @@
 	<div class="my-8 text-center">
 		<h1 class="mb-8 text-3xl text-primary">Our Services</h1>
 		<div class="flex items-center justify-center gap-56 text-xl">
-			<div>
+			<a href="/hive-finder">
 				<div class="mb-2 h-56 w-56 rounded-lg bg-font-white" />
 				Hive Finder
-			</div>
+			</a>
 			<div>
 				<div class="mb-2 h-56 w-56 rounded-lg bg-font-white" />
 				Queen Comfort Calculator

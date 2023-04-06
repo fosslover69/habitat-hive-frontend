@@ -1,14 +1,13 @@
 <script>
-	import { Navbar, NavBrand, NavLi, NavUl, NavHamburger, Button } from 'flowbite-svelte';
+	import { Navbar, NavBrand, NavLi, NavUl, NavHamburger } from 'flowbite-svelte';
 </script>
 
 <Navbar
 	let:hidden
 	let:toggle
-	fixed
 	rounded
 	color="none"
-	class="bg-background-light text-font-white"
+	class="fixed left-0 top-0 z-20 bg-background-light text-font-white"
 >
 	<NavBrand href="/">
 		<span class="self-center whitespace-nowrap py-8 text-3xl font-semibold text-font-white">
@@ -17,6 +16,11 @@
 	</NavBrand>
 	<NavHamburger on:click={toggle} />
 	<NavUl {hidden} class="text-font-white">
-		<Button class="rounded-lg bg-primary font-semibold text-font-white">Find Rental</Button>
+		<a href="/hive-finder"
+			><button
+				class="rounded-lg bg-primary p-2 font-semibold text-font-white hover:bg-background-light"
+				>Find Rental</button
+			></a
+		>
 	</NavUl>
 </Navbar>

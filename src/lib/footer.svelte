@@ -3,7 +3,7 @@
 </script>
 
 <div
-	class="flex h-full w-full items-center justify-between bg-background-light px-48 py-8 text-font-white"
+	class="fixed bottom-0 left-0 z-20 flex w-full items-center justify-between bg-background-light px-48 py-8 text-font-white"
 >
 	<div class="text-2xl">Habitat Hive</div>
 	<FooterLinkGroup
