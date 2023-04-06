@@ -115,7 +115,7 @@
 		</form>
 	</div>
 	<div class="flex items-center justify-center">
-		<div class="rounded-lg">
+		<Table class="rounded-lg" color="">
 			<TableHead class="rounded-xl bg-primary">
 				<TableHeadCell>Property ID</TableHeadCell>
 				<TableHeadCell class="border-l-2 border-font-white">Property Type</TableHeadCell>
@@ -124,9 +124,9 @@
 				<TableHeadCell class="border-l-2 border-font-white">Neighborhood Review</TableHeadCell>
 			</TableHead>
 
-			<TableBody class="divide-y text-center">
+			<TableBody class="divide-y bg-background-light text-center">
 				{#if filteredData.length === 0}
-					<TableBodyRow class="bg-background-light text-center">
+					<TableBodyRow class="text-center">
 						<TableBodyCell colspan="5">No Data</TableBodyCell>
 					</TableBodyRow>
 				{/if}
@@ -148,6 +148,6 @@
 					</TableBodyRow>
 				{/each}
 			</TableBody>
-		</div>
+		</Table>
 	</div>
 </div>
