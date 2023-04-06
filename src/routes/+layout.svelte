@@ -17,9 +17,6 @@
 	:root {
 		font-family: 'Gilda Display', serif;
 		background-color: #13100c;
-	}
-	.btnClass:hover {
-		background-color: #1f1a14;
-		color: #1f1a14;
+		scroll-behavior: smooth;
 	}
 </style>
