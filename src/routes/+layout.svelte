@@ -6,7 +6,7 @@
 
 <div class="bg-background">
 	<Header />
-	<div class="py-32 lg:pb-8 lg:pt-44">
+	<div class="py-32 lg:py-44">
 		<slot />
 	</div>
 	<Footer />
