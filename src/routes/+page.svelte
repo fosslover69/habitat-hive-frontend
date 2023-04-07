@@ -20,15 +20,27 @@
 	<div class="bg-background-light p-16 text-center text-xl">
 		<div class="flex flex-col items-center justify-center gap-8 lg:flex-row lg:gap-48">
 			<div>
-				<div class="mb-2 h-48 w-48 rounded-lg bg-font-white" />
+				<div class="mb-2 h-48 w-48 rounded-lg bg-font-white">
+					<div class="flex h-full items-center justify-center">
+						<img src="https://ik.imagekit.io/corvus/Hassle.svg" alt="Hassle Free" />
+					</div>
+				</div>
 				<div>Hassle Free</div>
 			</div>
 			<div>
-				<div class="mb-2 h-48 w-48 rounded-lg bg-font-white" />
+				<div class="mb-2 h-48 w-48 rounded-lg bg-font-white">
+					<div class="flex h-full items-center justify-center">
+						<img src="https://ik.imagekit.io/corvus/Free.svg" alt="Free" />
+					</div>
+				</div>
 				Free of Cost
 			</div>
 			<div>
-				<div class="mb-2 h-48 w-48 rounded-lg bg-font-white" />
+				<div class="mb-2 h-48 w-48 rounded-lg bg-font-white">
+					<div class="flex h-full items-center justify-center">
+						<img src="https://ik.imagekit.io/corvus/Chart.svg" alt="Chart" />
+					</div>
+				</div>
 				Habitability Index
 			</div>
 		</div>
@@ -37,11 +49,19 @@
 		<h1 class="mb-8 text-3xl text-primary">Our Services</h1>
 		<div class="flex flex-col items-center justify-center gap-8 text-xl lg:flex-row lg:gap-56">
 			<a href="/hive-finder">
-				<div class="mb-2 h-56 w-56 rounded-lg bg-font-white" />
+				<div class="mb-2 h-48 w-48 rounded-lg bg-font-white">
+					<div class="flex h-full items-center justify-center">
+						<img src="https://ik.imagekit.io/corvus/Home.svg" alt="Home" />
+					</div>
+				</div>
 				Hive Finder
 			</a>
 			<a href="/queen-calculator">
-				<div class="mb-2 h-56 w-56 rounded-lg bg-font-white" />
+				<div class="mx-auto mb-2 h-48 w-48 rounded-lg bg-font-white">
+					<div class="flex h-full items-center justify-center">
+						<img src="https://ik.imagekit.io/corvus/Calculator.svg" alt="Calculator" />
+					</div>
+				</div>
 				Queen Comfort Calculator
 			</a>
 		</div>
