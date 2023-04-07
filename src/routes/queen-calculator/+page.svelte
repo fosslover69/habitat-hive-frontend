@@ -1,9 +1,41 @@
 <script>
 	// @ts-nocheck
 
-	import { Input, Progressbar, Modal } from 'flowbite-svelte';
+	import { Input, Progressbar, Modal, Select } from 'flowbite-svelte';
 	let areacode, type, furnishing, windows, doors;
 	let value = 0;
+	let hiveType = [
+		{
+			name: 'Apartment',
+			value: 'Apartment'
+		},
+		{
+			name: 'Duplex',
+			value: 'Duplex'
+		},
+		{
+			name: 'Single Family Home',
+			value: 'Single-family home'
+		},
+		{
+			name: 'Bungalow',
+			value: 'Bungalow'
+		}
+	];
+	let hiveFurnish = [
+		{
+			name: 'Semi Furnished',
+			value: 'Semi_Furnished'
+		},
+		{
+			name: 'Fully Furnished',
+			value: 'Fully Furnished'
+		},
+		{
+			name: 'Unfurnished',
+			value: 'Unfurnished'
+		}
+	];
 	let modal = false;
 	async function postReq() {
 		const response = await fetch('http://localhost:5000/process-data', {
@@ -44,25 +76,11 @@
 			</div>
 			<div>
 				<span>Property Type</span>
-				<Input
-					class="mt-2"
-					type="text"
-					id="last_name"
-					bind:value={type}
-					placeholder="Duplex"
-					required
-				/>
+				<Select items={hiveType} bind:value={type} />
 			</div>
 			<div>
 				<span>Furnishing</span>
-				<Input
-					class="mt-2"
-					type="text"
-					id="company"
-					bind:value={furnishing}
-					placeholder="Fully Furnished"
-					required
-				/>
+				<Select items={hiveFurnish} bind:value={furnishing} />
 			</div>
 			<div>
 				<span>Number of Windows</span>
