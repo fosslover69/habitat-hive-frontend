@@ -9,7 +9,7 @@
 >
 	<NavBrand href="/">
 		<span
-			class="self-center whitespace-nowrap py-4 text-2xl font-semibold text-font-white sm:text-3xl lg:py-8"
+			class="self-center whitespace-nowrap text-2xl font-semibold text-font-white sm:text-3xl lg:py-8"
 		>
 			Habitat Hive
 		</span>
